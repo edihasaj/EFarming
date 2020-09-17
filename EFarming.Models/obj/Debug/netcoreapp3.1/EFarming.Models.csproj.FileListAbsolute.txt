@@ -1,0 +1,9 @@
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\bin\Debug\netcoreapp3.1\EFarming.Models.deps.json
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\bin\Debug\netcoreapp3.1\EFarming.Models.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\bin\Debug\netcoreapp3.1\EFarming.Models.pdb
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.csprojAssemblyReference.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.AssemblyInfoInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.AssemblyInfo.cs
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.csproj.CoreCompileInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Models\obj\Debug\netcoreapp3.1\EFarming.Models.pdb

@@ -1,0 +1,12 @@
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\bin\Debug\netcoreapp3.1\EFarming.Simulation.deps.json
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\bin\Debug\netcoreapp3.1\EFarming.Simulation.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\bin\Debug\netcoreapp3.1\EFarming.Simulation.pdb
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\bin\Debug\netcoreapp3.1\EFarming.Models.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\bin\Debug\netcoreapp3.1\EFarming.Models.pdb
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.csprojAssemblyReference.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.AssemblyInfoInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.AssemblyInfo.cs
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.csproj.CoreCompileInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.csproj.CopyComplete
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Simulation\obj\Debug\netcoreapp3.1\EFarming.Simulation.pdb

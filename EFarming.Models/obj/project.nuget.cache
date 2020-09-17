@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JsGOihu2HR9ezMcc0JVB+E5OVOpjyxOh6dimO1om3Ec4DNotGKF9riJNIuXH3q4dqhimMCWVldMIU/Bng4c2jQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Edi\\Desktop\\projects\\EFarming\\EFarming.Models\\EFarming.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Edi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

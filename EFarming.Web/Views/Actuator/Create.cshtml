@@ -1,0 +1,86 @@
+@model EFarming.Models.Actuator
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Actuator</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* <div class="form-group"> *@
+            @*     <label asp-for="Id" class="control-label"></label> *@
+            @*     <input asp-for="Id" class="form-control" /> *@
+            @*     <span asp-validation-for="Id" class="text-danger"></span> *@
+            @* </div> *@
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control"/>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control"/>
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control"/>
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CriticalValue" class="control-label"></label>
+                <input asp-for="CriticalValue" class="form-control"/>
+                <span asp-validation-for="CriticalValue" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsOpen"/> @Html.DisplayNameFor(model => model.IsOpen)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValveOpenTime" class="control-label"></label>
+                <input asp-for="ValveOpenTime" class="form-control"/>
+                <span asp-validation-for="ValveOpenTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WaterFlowRate" class="control-label"></label>
+                <input asp-for="WaterFlowRate" class="form-control"/>
+                <span asp-validation-for="WaterFlowRate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsGoodCondition"/> @Html.DisplayNameFor(model => model.IsGoodCondition)
+                </label>
+            </div>
+            @* <div class="form-group"> *@
+            @*     <label asp-for="FarmZoneId" class="control-label"></label> *@
+            @*     <input asp-for="FarmZoneId" class="form-control" /> *@
+            @*     <span asp-validation-for="FarmZoneId" class="text-danger"></span> *@
+            @* </div> *@
+            <div class="form-group">
+                @Html.LabelFor(model => model.FarmZone, "Zone", htmlAttributes: new {@class = "control-label col-md-2"})
+                <div class="col-md-4">
+                    @Html.ValidationMessageFor(model => model.FarmZoneId, "", new {@class = "text-danger"})
+                    @Html.DropDownListFor(x => x.FarmZoneId, new SelectList(ViewBag.Zones, "ZoneId", "FullName"), " ")
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

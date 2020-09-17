@@ -1,0 +1,110 @@
+@model IEnumerable<EFarming.Models.Actuator>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CriticalValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsOpen)
+            </th>
+             <th> 
+                 @Html.DisplayNameFor(model => model.ValveOpenTime) 
+             </th> 
+            <th>
+                @Html.DisplayNameFor(model => model.WaterFlowRate)
+            </th>
+             <th> 
+                 @Html.DisplayNameFor(model => model.IsGoodCondition) 
+             </th> 
+            <th>
+                @Html.DisplayNameFor(model => model.FarmZone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sensors)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CriticalValue)
+            </td>
+            <td class="valveState">
+                @Html.DisplayFor(modelItem => item.IsOpen)
+                @if (item.IsOpen)
+                {
+                    <p class="valveIsOpenText">Open</p>
+                }
+                else
+                {
+                    <p class="valveIsClosedText">Closed</p>
+                }
+            </td>
+             <td> 
+                 @Html.DisplayFor(modelItem => item.ValveOpenTime) 
+             </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.WaterFlowRate)
+            </td>
+             <td> 
+                 @Html.DisplayFor(modelItem => item.IsGoodCondition) 
+             </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.FarmZone.FullName)
+            </td>
+            <td>
+                @if(item.Sensors.Count > 0)
+                {
+                <ul>
+                    @foreach(var sensor in item.Sensors)
+                    {
+                        <li>
+                            @sensor.Name with Id: @sensor.Id
+                        </li>
+                    }
+                </ul>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Actuator", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", "Actuator",new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete","Actuator", new { id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

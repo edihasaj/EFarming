@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EFarming.Simulation/1.0.0": {
+        "dependencies": {
+          "EFarming.Models": "1.0.0"
+        },
+        "runtime": {
+          "EFarming.Simulation.dll": {}
+        }
+      },
+      "EFarming.Models/1.0.0": {
+        "runtime": {
+          "EFarming.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EFarming.Simulation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EFarming.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

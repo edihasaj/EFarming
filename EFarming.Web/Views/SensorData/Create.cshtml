@@ -1,0 +1,35 @@
+﻿@model EFarming.Models.SensorData
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+    <h1>Sensor Data</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Signal" class="control-label"></label>
+                <input asp-for="Signal" class="form-control" />
+                <span asp-validation-for="Signal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SensorId" class="control-label"></label>
+                <select asp-for="SensorId" asp-items="@ViewBag.SensorId" class="custom-select">
+                    <option selected="selected" disabled="disabled">Please select</option>
+                </select>
+                <span asp-validation-for="SensorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

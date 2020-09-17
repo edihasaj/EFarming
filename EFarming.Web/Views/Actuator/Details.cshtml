@@ -1,0 +1,119 @@
+@model EFarming.Models.Actuator
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>Actuator</h4>
+    <hr/>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CriticalValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CriticalValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsOpen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsOpen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ValveOpenTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ValveOpenTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.WaterFlowRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.WaterFlowRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsGoodCondition)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsGoodCondition)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FarmZoneId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FarmZoneId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Critical Value</th>
+            <th>Signal</th>
+            <th>CreatedAt</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Sensors)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CriticalValue)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit",  "Sensor", new {id = item.Id}) |
+                    @Html.ActionLink("Details", "Details", "Sensor",new {id = item.Id}) |
+                    @Html.ActionLink("Delete", "Delete",  "Sensor",new {id = item.Id})
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new {id = Model.Id}) |
+    <a asp-action="Index">Back to List</a>
+</div>

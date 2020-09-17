@@ -1,0 +1,12 @@
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\bin\Debug\netcoreapp3.1\EFarming.Repository.deps.json
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\bin\Debug\netcoreapp3.1\EFarming.Repository.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\bin\Debug\netcoreapp3.1\EFarming.Repository.pdb
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\bin\Debug\netcoreapp3.1\EFarming.Models.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\bin\Debug\netcoreapp3.1\EFarming.Models.pdb
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.csprojAssemblyReference.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.AssemblyInfoInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.AssemblyInfo.cs
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.csproj.CopyComplete
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.dll
+C:\Users\Edi\Desktop\projects\EFarming\EFarming.Repository\obj\Debug\netcoreapp3.1\EFarming.Repository.pdb
